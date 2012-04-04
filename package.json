@@ -10,7 +10,8 @@
   },
   "main": "lib/server.js",
   "dependencies": {
-    "express": "~2.5.9"
+    "express": "~2.5.9",
+    "commander": "~0.5.2"
   },
   "devDependencies": {},
   "optionalDependencies": {},
