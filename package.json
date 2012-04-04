@@ -1,0 +1,20 @@
+{
+  "author": "Zahan Malkani <zahanm@babelon.co>",
+  "name": "frontend",
+  "description": "Frontend for BabelOn",
+  "version": "0.0.1-alpha",
+  "homepage": "http://babelon.co",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/babelon/frontend.git"
+  },
+  "main": "lib/server.js",
+  "dependencies": {
+    "express": "~2.5.9"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "~0.6.14"
+  }
+}
