@@ -14,17 +14,17 @@
     steplength = 10;
 
     function step() {
-      if (el.style.opacity === targetopacity.toString()) {
+      if (parseFloat(el.style.opacity) === targetopacity) {
         callback();
         return;
       }
 
       if (el.style.opacity < targetopacity) {
         el.style.opacity = parseFloat(el.style.opacity) + stepsize;
-        if (el.style.opacity > targetopacity) el.style.opacity = targetopacity;
+        if (parseFloat(el.style.opacity) > targetopacity) el.style.opacity = targetopacity;
       } else {
         el.style.opacity = parseFloat(el.style.opacity) - stepsize;
-        if (el.style.opacity < targetopacity) el.style.opacity = targetopacity;
+        if (parseFloat(el.style.opacity) < targetopacity) el.style.opacity = targetopacity;
       }
 
       setTimeout(step, steplength);
@@ -41,11 +41,13 @@
       var learnmore;
 
       learnmore = document.getElementById('learnmore');
-      learnmore.style.opacity = 0;
-      learnmore.style.display = 'block';
-      fadeTo(learnmore, 1, function() {
-        document.getElementById('email').focus();
-      });
+      if (!learnmore.style.opacity) {
+        learnmore.style.opacity = 0;
+        learnmore.style.display = 'block';
+        fadeTo(learnmore, 1, function() {
+          document.getElementById('email').focus();
+        });
+      }
     });
   });
 
