@@ -6944,6 +6944,9 @@ body {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfdfdf', GradientType=0);
 }
+/*
+ * Styling for hero unit up top
+ */
 .container:first-child {
   margin-top: 10px;
 }
@@ -6981,4 +6984,19 @@ body {
   margin-top: -20px;
   color: #c83025;
   font-weight: 200;
+}
+/*
+ * Styling for email form
+ */
+#learningform {
+  text-align: center;
+}
+#learningform span {
+  display: inline-block;
+}
+#learningform input[type="email"] {
+  width: 160px;
+}
+#learningform input[type="submit"] {
+  width: 40px;
 }
