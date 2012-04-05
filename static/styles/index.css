@@ -6986,11 +6986,12 @@ body {
   font-weight: 200;
 }
 /*
- * Styling for email form
+ * Styling for learn more email form
  */
-#learningform {
+#learnmore {
   text-align: center;
+  display: none;
 }
-#learningform input[type="email"] {
+#learnmore input[type="email"] {
   width: 160px;
 }
