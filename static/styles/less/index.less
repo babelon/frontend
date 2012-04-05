@@ -3,6 +3,17 @@
 @import "bootstrap.less";
 @import "responsive.less";
 
+html {
+  height: 100%;
+}
+
+body {
+  // to account for gradient extending to window
+  height: 100%;
+  background-attachment: fixed;
+  #gradient > .vertical(@white, #dfdfdf);
+}
+
 .container:first-child {
   margin-top: 10px;
 }
@@ -14,22 +25,30 @@
 
 .hero-unit {
   background: inherit;
+  text-align: center;
 }
 
 .hero-unit > img {
-  width: 100%;
+  width: 72%;
+  .center-block();
 }
 
 .hero-unit > hr {
-  height: 5px;
+  color: @grayLight;
+  background-color: @grayLight;
+  height: 1px;
 }
 
 .hero-unit span {
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 100;
   color: @grayLight;
+  margin-right: 5px;
 }
 
 .hero-unit .btn {
-  width: 20%;
+  margin-left: 5px;
+  margin-top: -20px;
+  color: lighten(@red, 10%);
+  font-weight: 200;
 }
