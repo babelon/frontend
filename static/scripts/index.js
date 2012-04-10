@@ -1,7 +1,7 @@
 (function() {
 
   /*
-   * show = boolean of whether it should be diplayed in the end or not
+   * targetopacity = float of opacity to fadeTo
    */
   function fadeTo (el, targetopacity, callback) {
     var stepsize, steplength;
