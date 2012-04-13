@@ -11,7 +11,8 @@
   "main": "lib/server.js",
   "dependencies": {
     "express": "~2.5.9",
-    "commander": "~0.5.2"
+    "commander": "~0.5.2",
+    "mongoose": "~2.5.13"
   },
   "devDependencies": {
     "coffee-script": "~1.2.0"
